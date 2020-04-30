@@ -9,10 +9,10 @@ class MenuBot():
         self.driver.get('https://restaurant.grubhub.com/')
         username = self.driver.find_element_by_xpath('//*[@id="appScrollContainer"]/div[1]/section/div/div[1]/div[1]/div/label/input')
         username.click()
-        username.send_keys('jiabinggao@gmail.com')
+        username.send_keys('username/email')
         password = self.driver.find_element_by_xpath('//*[@id="appScrollContainer"]/div[1]/section/div/div[1]/div[2]/div/div[1]/label/input')
         password.click()
-        password.send_keys('Jz!5101973')
+        password.send_keys('password')
         login_btn = self.driver.find_element_by_xpath('//*[@id="appScrollContainer"]/div[1]/section/div/div[1]/button')
         login_btn.click()
     
